@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".activities.SingUpScreen">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="183dp"
+    android:background="@drawable/sing_in_background_radius">
+
+    <!-- Элемент ImageView -->
+    <ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginBottom="22dp"
+    android:src="@drawable/icon"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="8dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:text="E-mail"
+    android:textColor="#000000"
+    android:textFontWeight="400"
+    android:textSize="15sp" />
+
+    <!-- Элемент EditText -->
+<EditText
+android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:hint="deliver@mail.ru"
+    android:inputType="textEmailAddress"
+    android:textColorHint="#000000"
+    android:textFontWeight="1000"
+    android:textSize="17sp" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="35dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:text="Password"
+    android:textColor="#000000"
+    android:textFontWeight="400"
+    android:textSize="15sp" />
+
+<EditText
+android:id="@+id/password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:hint="********"
+    android:inputType="textPassword"
+    android:textColorHint="#000000"
+    android:textFontWeight="1000"
+    android:textSize="17sp" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="37dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:text="Full name"
+    android:textColor="#000000"
+    android:textFontWeight="400"
+    android:textSize="15sp" />
+
+<EditText
+android:id="@+id/fullname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:hint="Olivie Berlusco"
+    android:inputType="textPersonName"
+    android:textColorHint="#000000"
+    android:textFontWeight="1000"
+    android:textSize="17sp" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="37dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:text="Phone number"
+    android:textColor="#000000"
+    android:textFontWeight="400"
+    android:textSize="15sp" />
+
+<EditText
+android:id="@+id/phone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:hint="+7 (963) 444-12-23"
+    android:inputType="phone"
+    android:textColorHint="#000000"
+    android:textFontWeight="1000"
+    android:textSize="17sp" />
+    </LinearLayout>
+
+<androidx.appcompat.widget.AppCompatButton
+android:id="@+id/singup"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="22dp"
+    android:layout_marginBottom="17dp"
+    android:background="@drawable/on_board_screen_button_radius"
+    android:backgroundTint="#FA4A0C"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:onClick="OnSingUp"
+    android:text="Register Now"
+    android:textAllCaps="false"
+    android:textColor="#FFFFFF"
+    android:textFontWeight="1000"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toTopOf="@+id/cancel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+    <!-- Элемент AppCompatButton (Кнопка) -->
+<androidx.appcompat.widget.AppCompatButton
+android:id="@+id/cancel"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="22dp"
+    android:layout_marginBottom="32dp"
+    android:background="@drawable/on_board_screen_button_radius"
+    android:backgroundTint="#FA4A0C"
+    android:fontFamily="@font/nunito_sans_extralight"
+    android:onClick="OnCancel"
+    android:text="Cancel"
+    android:textAllCaps="false"
+    android:textColor="#FFFFFF"
+    android:textFontWeight="1000"
+    android:textSize="17sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

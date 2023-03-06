@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA4A0C"
+    android:layoutAnimation="@anim/on_boarding_screen_setting_right">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="470dp"
+
+            android:layout_marginTop="160dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/on_boarding_screen_step2" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="134dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/on_board_screen_button_radius"
+                android:fontFamily="@font/italianno"
+                android:onClick="OnSingIn"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginRight="15.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/on_board_screen_button_radius"
+                android:fontFamily="@font/italianno"
+                android:onClick="OnSingUp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/on_board_screen_punct_radius"
+            android:backgroundTint="#40FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="190dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/on_board_screen_punct_radius"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/numans"
+            android:onClick="OnSkipSing"
+            android:text="Skip Authorization"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
